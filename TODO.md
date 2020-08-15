@@ -18,6 +18,7 @@ I also have pushed the code to github
 https://github.com/yash-jp/CommonWealth_Test
 
 /**************************STEPS TO FOLLOW TO RUN LOCALLY*********************************/
+0 you should have npm and node installed in your machine
 1 download the code (zip file OR clone/download project from github make sure you download yash_experiment branch)
 2 run command "npm install"
 3 once done run command "npm start"
