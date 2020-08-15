@@ -6,7 +6,6 @@ import axios from 'axios';
 
 // store.json file
 import initialData from '../store.json';
-// import Contribution from '../components/Contribution/Contribution';
 
 
 export const contributionSelect = (contribution: Contribution) => {
@@ -86,7 +85,6 @@ export const handleDeleteSuccess = (uuid : String) => {
 
 
 export const initEdit = (uuid: String, contribution: Contribution) => {
-  console.log(`inside initEdit - ${uuid}, ${contribution}`);
   return (dispatch: any) => {
     // faking EDIT API CALL, as this domain dosen't exist so we will treat failure as success, and succes as failure
     // we are following core REST protocols where we pass uuid as a path parameter to DELETE API
