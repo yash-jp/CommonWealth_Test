@@ -7,6 +7,11 @@ const selectedContribution = (state: Nullable<Contribution> = null, action: Acti
       return {
         ...action.contribution
       };
+
+      case Actions.SELECTED_CLEAR:
+        // let newState = {type:null};
+      return null;
+
     default:
       return state;
   }

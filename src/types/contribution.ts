@@ -28,3 +28,7 @@ export interface WithContributions {
 export interface WithSelectedContribution {
   selectedContribution: Nullable<Contribution>;
 }
+
+export interface Error {
+  error: boolean;
+}

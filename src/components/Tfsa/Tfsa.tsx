@@ -1,23 +1,25 @@
-import InputAdornment from '@material-ui/core/InputAdornment';
 import TextField from '@material-ui/core/TextField';
-import { Field } from 'formik';
+// removed Formik as using only materialUI TextField
+// import { Field } from 'formik';
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-import { FieldRenderProps } from '../../types/form';
+// selector, to prefill the tfsa textfield value
+import { getSelected } from '../../selectors/contributions';
 
-const Tfsa = () => (
-  <Field name="tfsa">
-    {({ field }: FieldRenderProps) => (
-      <TextField
-        label="TFSA"
-        InputProps={{
-          ...field,
-          type: 'number',
-          startAdornment: <InputAdornment position="start">$</InputAdornment>
-        }}
-      />
-    )}
-  </Field>
-);
+const Rrsp = (props:any) => {
+  const selected = useSelector(getSelected);
+  return(<div>
+    <TextField
+      error={props.error}
+      id="standard-rrsp"
+      label="TFSA Contribution"
+      helperText="Please input TFSA contribution more than 0"
+      type='number'
+      defaultValue={selected?.tfsa}
+      onChange={props.tfsaChange}
+    />
+  </div>);
+}
 
-export default Tfsa;
+export default Rrsp;
