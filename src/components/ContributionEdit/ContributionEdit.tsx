@@ -33,6 +33,7 @@ const ContributionEdit = () => {
   const dispatch = useDispatch();
   const dismiss = () => dispatch(contributionEditDismiss());
 
+  // every time selectedContribution changes this effect will run
   useEffect(()=>{
     if(selectedContribution!==null){
       setRrspValue(selectedContribution.rrsp.toString());

@@ -11,4 +11,18 @@ Another twp thing to note is as  (1) Endpoints are fake, it will going to fail, 
 
 I have tried to make proper commenting wherever possible, messaging  and promptsto user, why I have used certain thing in certain way. I'm eager to discuss how I have gone through this entire process and for the further discussion.
 
+/*****************************HEROKU AND GITHUB****************************/
+You can go to this link as I have depeloyed on heroku
+https://commonwealth-test-yash.herokuapp.com/
+I also have pushed the code to github
+https://github.com/yash-jp/CommonWealth_Test
+
+/**************************STEPS TO FOLLOW TO RUN LOCALLY*********************************/
+1 download the code (zip file)(don't download/clone from github as to start project I have use serve, which wont work locally, only for heroku)
+2 run command "npm install"
+3 once done run command "npm start"
+4 app will open in your local environment, and you are good to go
+
+Thank You :)
+
 Hope this helps. -->

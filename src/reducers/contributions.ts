@@ -3,12 +3,6 @@ import { Action, Actions } from '../types/action';
 
 const contributions = (state: Contributions = {}, action: Action) => {
   switch(action.type){
-    // case Actions.CONTRIBUTION_DELETE_FAILURE:
-    //   return{
-    //     ...state,
-    //     error : true
-    //   }
-
       case Actions.CONTRIBUTION_DELETE_SUCCESS:{
         const updatedContributions = Object.values<Contribution>(state).filter(contribution => contribution.uuid !== action.uuid);
         console.log(`updated - ${JSON.stringify(updatedContributions)}`);
